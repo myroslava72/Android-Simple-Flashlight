@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/facebook" android:title="Facebook" android:icon="@drawable/facebook"/>
+    <item android:id="@+id/twitter" android:title="Twitter" android:icon="@drawable/twitter"/>
+    <item android:id="@+id/google" android:title="Google+" android:icon="@drawable/google"/>
+    <item android:id="@+id/vkontakte" android:title="ВКонтакте" android:icon="@drawable/vkontakte"/>
+    <item android:id="@+id/emailMain" android:title="E-mail" android:icon="@drawable/email_main"/>
+    <item android:id="@+id/bluetooth" android:title="Bluetooth" android:icon="@drawable/bluetooth"/>
+</menu>

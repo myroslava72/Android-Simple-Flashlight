@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item android:drawable="@drawable/red" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="75" />
+    <item android:drawable="@drawable/red" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="75" />
+    <item android:drawable="@drawable/white" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="230" />
+    <item android:drawable="@drawable/blue" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="75" />
+    <item android:drawable="@drawable/blue" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="75" />
+    <item android:drawable="@drawable/blue" android:duration="75" />
+    <item android:drawable="@drawable/black" android:duration="230" />
+</animation-list>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gmail" android:title="Gmail" android:icon="@drawable/gmail"/>
+    <item android:id="@+id/email" android:title="Email" android:icon="@drawable/email"/>
+</menu>

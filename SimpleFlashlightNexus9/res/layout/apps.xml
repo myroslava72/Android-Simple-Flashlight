@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/GrayDolphin"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:background="@drawable/settings_and_apps_background">
+        <ImageButton android:id="@+id/btnMenu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                     android:src="@drawable/sidebtn1" android:background="@null" android:contentDescription="@null"
+                     android:onClick="onClick" android:layout_gravity="right|top" android:layout_alignParentTop="true"
+                     android:layout_alignParentRight="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:text="Weather"
+                  android:id="@+id/textView" android:gravity="right"
+                  android:layout_alignBottom="@+id/btnMenu" android:layout_alignStart="@+id/gridLayout"
+                />
+        <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:background="@color/Black"
+                android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_alignParentEnd="false"
+                android:layout_below="@+id/btnMenu" android:id="@+id/gridLayout" android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp">
+            <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/compass"
+                    />
+            <TextView android:layout_width="290dp" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceSmall"
+                      android:id="@+id/textView2" android:layout_row="0" android:layout_column="1"
+                      android:layout_marginTop="10dp" android:textSize="15dp"
+                      android:text="Stylish weather app in your status bar.\n\nWeather is exceptionally easy to use app for staying always updated with the weather conditions."
+                      android:layout_marginBottom="10dp"/>
+        </GridLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium"
+                  android:id="@+id/textView14" android:gravity="right"
+                  android:layout_alignStart="@+id/gridLayout" android:layout_below="@+id/gridLayout"
+                  android:text="Battery"/>
+        <GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@color/Black" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+                    android:layout_alignParentEnd="false" android:layout_below="@+id/textView14"
+                    android:id="@+id/gridLayout2" android:layout_marginTop="5dp" android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="60dp" android:layout_height="wrap_content" android:id="@+id/imageView2"
+                       android:layout_marginTop="10dp" android:src="@drawable/battery"/>
+            <TextView android:layout_width="290dp" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView3"
+                      android:layout_row="0" android:layout_column="1" android:layout_marginTop="10dp"
+                      android:textSize="15dp"
+                      android:text="Battery charge in the status bar. Fast. Simple. Beautiful."
+                      android:layout_marginBottom="10dp" android:singleLine="false"/>
+        </GridLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView4"
+                  android:gravity="right" android:layout_alignStart="@+id/gridLayout"
+                  android:layout_below="@+id/gridLayout2" android:text="Cardiograph"/>
+        <GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@color/Black" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+                    android:layout_alignParentEnd="false" android:layout_below="@+id/textView4"
+                    android:id="@+id/gridLayout3" android:layout_marginTop="5dp" android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="60dp" android:layout_height="wrap_content" android:id="@+id/imageView3"
+                       android:layout_marginTop="10dp" android:src="@drawable/heart"/>
+            <TextView android:layout_width="290dp" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView5"
+                      android:layout_row="0" android:layout_column="1" android:layout_marginTop="10dp"
+                      android:textSize="15dp" android:text="Ever wanted to know how fast your heart is beating?\n\nUse your smartphone's built-in camera to get an accurate reading almost instantly."
+                      android:layout_marginBottom="10dp" android:singleLine="false"/>
+        </GridLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView6"
+                  android:gravity="right" android:layout_alignStart="@+id/gridLayout"
+                  android:layout_below="@+id/gridLayout3" android:text="Tiny Compass"/>
+        <GridLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@color/Black" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+                    android:layout_alignParentEnd="false" android:layout_below="@+id/textView6"
+                    android:id="@+id/gridLayout4" android:layout_marginTop="5dp" android:layout_marginBottom="15dp">
+            <ImageView android:layout_width="60dp" android:layout_height="wrap_content" android:id="@+id/imageView4"
+                       android:layout_marginTop="10dp" android:src="@drawable/compass"/>
+            <TextView android:layout_width="290dp" android:layout_height="wrap_content"
+                      android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView7"
+                      android:layout_row="0" android:layout_column="1" android:layout_marginTop="10dp"
+                      android:textSize="15dp" android:text="Incredibly simple, yet very useful compass app with great-looking graphics!\n\nThe first High Quality Compass for Android is available on the Market."
+                      android:layout_marginBottom="10dp" android:singleLine="false"/>
+        </GridLayout>
+    </RelativeLayout>
+</FrameLayout>

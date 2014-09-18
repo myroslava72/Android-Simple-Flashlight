@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity"
+                android:id="@+id/main" android:clickable="true">
+
+    <ImageButton
+            android:id="@+id/btnFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btnon"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            />
+    <ImageButton
+            android:id="@+id/btnGoMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconmain"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_alignParentTop="false"
+            android:layout_toLeftOf="@+id/btnFlash" android:layout_above="@+id/btnFlash"
+            android:layout_alignParentStart="true" android:layout_centerInParent="true" android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoTrafficLights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icontrafficlights"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_alignBaseline="@+id/btnFlash" android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false" android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentRight="false"
+            android:layout_above="@+id/btnFlash" android:layout_alignParentBottom="false"
+            android:layout_centerInParent="true" android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoLightbulb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconlightbulb"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/btnFlash" android:layout_above="@+id/btnFlash"
+            android:layout_alignParentEnd="true" android:layout_centerInParent="true" android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoPalette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconpalette"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_alignStart="@+id/btnGoMain"
+            android:layout_toLeftOf="@+id/btnFlash"
+            android:layout_centerInParent="true" android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoPolice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconpolice"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_centerInParent="true" android:layout_alignBaseline="@+id/btnFlash"
+            android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconsettings"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_toRightOf="@+id/btnFlash" android:layout_centerInParent="true"
+            android:layout_alignBaseline="@+id/btnGoLightbulb" android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+    <ImageButton
+            android:id="@+id/btnGoDownloads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icondownloads"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_below="@+id/btnFlash"
+            android:layout_centerInParent="true" android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trafficLightsTop"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/trafficLightsBottom"
+            android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/trafficLightsBottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lightbulbTop"
+            android:src="@drawable/lightbulbtop"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/btnFlash" android:layout_alignWithParentIfMissing="true"
+            android:layout_alignBottom="@+id/btnGoPolice"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lightbulbBottom"
+            android:src="@drawable/lightbulbbottom"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" android:layout_alignParentBottom="false"
+            android:layout_alignBaseline="@+id/btnFlash" android:layout_alignTop="@+id/btnFlash"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lightbulbLit"
+            android:src="@drawable/lightbulb_lit"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/btnFlash" android:layout_alignWithParentIfMissing="true"
+            android:layout_alignTop="@+id/lightbulbTop" android:alpha="1"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/policeLayout"
+            android:visibility="invisible"
+            android:alpha="1"/>
+    <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sidebtn1"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="onClick"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"/>
+</RelativeLayout>
+
